@@ -1,0 +1,93 @@
+import React from "react";
+import styled from "styled-components";
+import {
+  FaReact,
+  FaCss3,
+  FaHtml5,
+  FaDatabase,
+  FaJs,
+  FaNode,
+  FaGithub,
+  FaLess,
+} from "react-icons/fa";
+import {
+  SiStyledcomponents,
+  SiTypescript,
+  SiVite,
+  SiAdobeillustrator,
+} from "react-icons/si";
+import { TbBrandCSharp, TbBrandRedux } from "react-icons/tb";
+
+const TechstackContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+`;
+
+const TechRow = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+`;
+
+const TechIcon = styled.div`
+  font-size: 45px;
+  margin: 0 10px;
+`;
+
+const Techstack = () => {
+  return (
+    <TechstackContainer>
+      <TechRow>
+        <TechIcon>
+          <FaReact />
+        </TechIcon>
+        <TechIcon>
+          <SiTypescript />
+        </TechIcon>
+        <TechIcon>
+          <FaCss3 />
+        </TechIcon>
+        <TechIcon>
+          <FaHtml5 />
+        </TechIcon>
+        <TechIcon>
+          <FaLess />
+        </TechIcon>
+        <TechIcon>
+          <FaDatabase />
+        </TechIcon>
+        <TechIcon>
+          <FaJs />
+        </TechIcon>
+      </TechRow>
+      <TechRow>
+        <TechIcon>
+          <FaNode />
+        </TechIcon>
+        <TechIcon>
+          <FaGithub />
+        </TechIcon>
+        <TechIcon>
+          <SiStyledcomponents />
+        </TechIcon>
+        <TechIcon>
+          <TbBrandCSharp />
+        </TechIcon>
+        <TechIcon>
+          <TbBrandRedux />
+        </TechIcon>
+        <TechIcon>
+          <SiVite />
+        </TechIcon>
+        <TechIcon>
+          <SiAdobeillustrator />
+        </TechIcon>
+      </TechRow>
+    </TechstackContainer>
+  );
+};
+
+export default Techstack;
+
