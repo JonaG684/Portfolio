@@ -52,11 +52,6 @@ const Navbar = () => {
             Projects
           </SmoothScrollLink>
         </NavLinkItem>
-        <NavLinkItem>
-          <SmoothScrollLink to="contact" smooth={true} duration={350}>
-            Contact
-          </SmoothScrollLink>
-        </NavLinkItem>
       </NavLinks>
     </NavbarContainer>
   );

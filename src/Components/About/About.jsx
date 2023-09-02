@@ -42,8 +42,8 @@ const About = () => {
             <br />
             <br />
             My goal is to create complete websites with an appealing design that
-            offers an excellent user experience. I am looking for job opportunities where I can contribute, learn,
-            and grow.
+            offers an excellent user experience. I am looking for job
+            opportunities where I can contribute, learn, and grow.
             <br />
             <br />
             You can check out my projects in the Projects section.

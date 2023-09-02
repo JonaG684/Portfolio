@@ -62,6 +62,21 @@ const ScrollIcon = styled.div`
   margin-bottom: 5px;
 `;
 
+const CVLink = styled.a`
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+`;
+ // src\assets\JONATHAN ADRIEL GARCIA AVILEZ CV EN.pdf
 const Home = () => {
   return (
     <HomeContainer id="home">
@@ -70,6 +85,7 @@ const Home = () => {
       <Subtitle>
       Full Stack Developer - front-end and graphic design enthusiast.
       </Subtitle>
+      <CVLink href="../../src/assets/JONATHAN ADRIEL GARCIA AVILEZ CV EN.pdf" download>Download CV</CVLink>
       <Element name="about" />
       <MouseElement>
         <ScrollText>Scroll Down</ScrollText>
