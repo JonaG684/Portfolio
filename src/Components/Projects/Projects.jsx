@@ -16,7 +16,7 @@ const ProjectCardContainer = styled.div`
 const Title = styled.h2`
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.1rem;
 `;
 
 const LaptopImage = styled.img`
@@ -50,16 +50,6 @@ const Projects = () => {
               <ProjectTitle>{project.title}</ProjectTitle>
               <ProjectDescription>{project.description}</ProjectDescription>
             </DescriptionContainer>
-          </ProjectCardContainer>
-        ))}
-         {projectsData.map((project, index) => (
-          <ProjectCardContainer key={index}>
-            <LaptopImage src={project.imageUrl} alt={`${project.title} Laptop`} />
-            <DescriptionContainer>
-              <ProjectTitle>{project.title}</ProjectTitle>
-              <ProjectDescription>{project.description}</ProjectDescription>
-            </DescriptionContainer>
-            
           </ProjectCardContainer>
         ))}
       </ProjectsContainer>

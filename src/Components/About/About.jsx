@@ -12,18 +12,18 @@ const AboutContainer = styled.div`
 
 const InfoSection = styled.div`
   flex: 1;
-  padding: 1rem;
+  padding: 2rem;
 `;
 
 const SkillsSection = styled.div`
   flex: 1;
-  padding: 1rem;
+  padding: 2rem;
 `;
 
 const Title = styled.h2`
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 `;
 
 const About = () => {
@@ -33,16 +33,23 @@ const About = () => {
         <InfoSection>
           <Title>About Me</Title>
           <p>
-            I'm a Frontend Web Developer building the Front-end of Websites and
-            Web Applications that leads to the success of the overall product.
-            Check out some of my work in the Projects section. I also like
-            sharing content related to the stuff that I have learned over the
-            years in Web Development so it can help other people of the Dev
-            Community. Feel free to Connect or Follow me on my Linkedin where I
-            post useful content related to Web Development and Programming I'm
-            open to Job opportunities where I can contribute, learn and grow. If
-            you have a good opportunity that matches my skills and experience
-            then don't hesitate to contact me.
+            I'm a full-stack developer with a preference for the front end,
+            although I also have experience in the back end.
+            <br />
+            <br />
+            I have developed personal projects to improve my skills and prepare
+            for the professional world.
+            <br />
+            <br />
+            My goal is to create complete websites with an appealing design that
+            offers an excellent user experience. I am looking for job opportunities where I can contribute, learn,
+            and grow.
+            <br />
+            <br />
+            You can check out my projects in the Projects section.
+            <br />
+            <br />
+            Feel free to contact me.
           </p>
         </InfoSection>
         <SkillsSection>

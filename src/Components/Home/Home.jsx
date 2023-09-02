@@ -13,10 +13,11 @@ const HomeContainer = styled.div`
 `;
 
 const Heading = styled.h1`
-  font-size: 2rem;
+  font-size: 5rem;
   font-weight: bold;
+  font-family: "Jetsbrains Mono", monospace;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0,5rem;
 `;
 
 const Subtitle = styled.p`
@@ -67,8 +68,7 @@ const Home = () => {
       <Floating />
       <Heading>HEY, I'M JONATHAN GARCIA</Heading>
       <Subtitle>
-        A Frontend focused Web Developer building the Frontend of Websites and
-        Web Applications that leads to the success of the overall product
+      Full Stack Developer - front-end and graphic design enthusiast.
       </Subtitle>
       <Element name="about" />
       <MouseElement>
