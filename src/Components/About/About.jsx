@@ -1,23 +1,36 @@
 import React from "react";
 import styled from "styled-components";
-import TechStack from "./TecnologyBox";
-import { Element, Link } from "react-scroll";
 import Techstack from "./TecnologyBox";
+import { Element, Link } from "react-scroll";
+import TechStack from "./TecnologyBox";
 
 const AboutContainer = styled.div`
   display: flex;
+  flex-direction: column;
   padding: 2rem;
   min-height: 100vh;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 `;
 
 const InfoSection = styled.div`
   flex: 1;
   padding: 2rem;
+
+  @media (min-width: 768px) {
+    padding: 2rem 1rem;
+  }
 `;
 
 const SkillsSection = styled.div`
   flex: 1;
   padding: 2rem;
+
+  @media (min-width: 768px) {
+    padding: 2rem 1rem;
+  }
 `;
 
 const Title = styled.h2`
@@ -54,7 +67,7 @@ const About = () => {
         </InfoSection>
         <SkillsSection>
           <Title>Skills</Title>
-          <Techstack />
+          <TechStack />
         </SkillsSection>
       </AboutContainer>
     </Element>
@@ -62,3 +75,4 @@ const About = () => {
 };
 
 export default About;
+

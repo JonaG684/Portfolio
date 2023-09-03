@@ -10,6 +10,7 @@ const FooterContainer = styled.footer`
 
 const FooterText = styled.p`
   font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
   aling-items: center;
   color: #fff;
   margin: 0;

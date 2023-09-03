@@ -10,6 +10,10 @@ const HomeContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
 `;
 
 const Heading = styled.h1`
@@ -17,12 +21,22 @@ const Heading = styled.h1`
   font-weight: bold;
   font-family: "Jetsbrains Mono", monospace;
   align-items: center;
-  margin-bottom: 0,5rem;
+  margin-bottom: 0.5rem;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+  }
 `;
 
 const Subtitle = styled.p`
   font-size: 1.2rem;
   align-items: center;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;
 
 const MouseElement = styled.div`
@@ -47,11 +61,19 @@ const MouseElement = styled.div`
       transform: translateX(-50%) translateY(0);
     }
   }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const ScrollText = styled.p`
   margin: 0;
   font-size: 0.8rem;
+
+  @media (max-width: 768px) {
+    font-size: 0.7rem;
+  }
 `;
 
 const ScrollIcon = styled.div`
@@ -60,11 +82,16 @@ const ScrollIcon = styled.div`
   border: 2px solid white;
   border-radius: 20px;
   margin-bottom: 5px;
+
+  @media (max-width: 768px) {
+    width: 16px;
+    height: 24px;
+  }
 `;
 
 const CVLink = styled.a`
-  background-color: #007bff;
-  color: #fff;
+  background-color: lightcoral;
+  color: #333;
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -73,19 +100,23 @@ const CVLink = styled.a`
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: #0056b3;
+    background-color: #f5abb0;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
   }
 `;
- // src\assets\JONATHAN ADRIEL GARCIA AVILEZ CV EN.pdf
+
 const Home = () => {
   return (
     <HomeContainer id="home">
       <Floating />
       <Heading>HEY, I'M JONATHAN GARCIA</Heading>
-      <Subtitle>
-      Full Stack Developer - front-end and graphic design enthusiast.
-      </Subtitle>
-      <CVLink href="../../src/assets/JONATHAN ADRIEL GARCIA AVILEZ CV EN.pdf" download>Download CV</CVLink>
+      <Subtitle>Full Stack Developer - front-end and graphic design enthusiast.</Subtitle>
+      <CVLink href="../../src/assets/JONATHAN ADRIEL GARCIA AVILEZ CV EN.pdf" download>
+        Download CV
+      </CVLink>
       <Element name="about" />
       <MouseElement>
         <ScrollText>Scroll Down</ScrollText>

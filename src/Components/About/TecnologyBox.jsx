@@ -20,15 +20,20 @@ import { TbBrandCSharp, TbBrandRedux } from "react-icons/tb";
 
 const TechstackContainer = styled.div`
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   padding-bottom: 50px;
 `;
 
 const TechRow = styled.div`
   display: flex;
   justify-content: center;
-  width: 100%;
+  flex-wrap: wrap;
+  max-width: 400px; /* Ajusta el ancho máximo según tus preferencias */
+
+  @media (max-width: 768px) {
+    max-width: 300px; /* Ajusta el ancho máximo para pantallas más pequeñas */
+  }
 `;
 
 const TechIcon = styled.div`
@@ -90,4 +95,6 @@ const Techstack = () => {
 };
 
 export default Techstack;
+
+
 
