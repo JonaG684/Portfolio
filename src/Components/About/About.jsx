@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Techstack from "./TecnologyBox";
 import { Element, Link } from "react-scroll";
 import TechStack from "./TecnologyBox";
 
@@ -17,6 +16,7 @@ const AboutContainer = styled.div`
 
 const InfoSection = styled.div`
   flex: 1;
+  font-family: "Jetsbrains Mono",monospace;
   padding: 2rem;
 
   @media (min-width: 768px) {
@@ -35,6 +35,7 @@ const SkillsSection = styled.div`
 
 const Title = styled.h2`
   text-align: center;
+  font-family: "Jetsbrains Mono",monospace;
   font-size: 2rem;
   margin-bottom: 1rem;
 `;

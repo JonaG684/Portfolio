@@ -4,7 +4,6 @@ import { Element, Link } from "react-scroll";
 import Floating from "../Link/Floating";
 
 const HomeContainer = styled.div`
-  padding: 2rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,7 +18,7 @@ const HomeContainer = styled.div`
 const Heading = styled.h1`
   font-size: 5rem;
   font-weight: bold;
-  font-family: "Jetsbrains Mono", monospace;
+  font-family: "Jetsbrains Mono", italic;
   align-items: center;
   margin-bottom: 0.5rem;
 
@@ -33,6 +32,7 @@ const Heading = styled.h1`
 const Subtitle = styled.p`
   font-size: 1.2rem;
   align-items: center;
+  font-family: "Jetsbrains Mono", monospace;
 
   @media (max-width: 768px) {
     font-size: 1rem;
@@ -41,7 +41,7 @@ const Subtitle = styled.p`
 
 const MouseElement = styled.div`
   position: absolute;
-  bottom: 2rem;
+  bottom: 1rem;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -70,6 +70,7 @@ const MouseElement = styled.div`
 const ScrollText = styled.p`
   margin: 0;
   font-size: 0.8rem;
+  font-family: "Jetsbrains Mono", monospace;
 
   @media (max-width: 768px) {
     font-size: 0.7rem;
@@ -91,6 +92,7 @@ const ScrollIcon = styled.div`
 
 const CVLink = styled.a`
   background-color: lightcoral;
+  font-family: "Jetsbrains Mono", monospace;
   color: #333;
   text-decoration: none;
   padding: 10px 20px;
@@ -113,8 +115,13 @@ const Home = () => {
     <HomeContainer id="home">
       <Floating />
       <Heading>HEY, I'M JONATHAN GARCIA</Heading>
-      <Subtitle>Full Stack Developer - front-end and graphic design enthusiast.</Subtitle>
-      <CVLink href="../../src/assets/JONATHAN ADRIEL GARCIA AVILEZ CV EN.pdf" download>
+      <Subtitle>
+        Full Stack Developer - front-end and graphic design enthusiast.
+      </Subtitle>
+      <CVLink
+        href="../../src/assets/JONATHAN ADRIEL GARCIA AVILEZ CV EN.pdf"
+        download
+      >
         Download CV
       </CVLink>
       <Element name="about" />

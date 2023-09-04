@@ -31,11 +31,13 @@ const DescriptionContainer = styled.div`
 
 const ProjectTitle = styled.h3`
   font-size: 1.5rem;
+  font-family: "Jetsbrains Mono",monospace;
   margin-bottom: 0.5rem;
 `;
 
 const ProjectDescription = styled.p`
   font-size: 1rem;
+  font-family: "Arcadia Code",monospace;
 `;
 
 const Projects = () => {
@@ -43,6 +45,24 @@ const Projects = () => {
     <Element name="projects">
       <ProjectsContainer>
         <Title>Projects</Title>
+        {projectsData.map((project, index) => (
+          <ProjectCardContainer key={index}>
+            <LaptopImage src={project.imageUrl} alt={`${project.title} Laptop`} />
+            <DescriptionContainer>
+              <ProjectTitle>{project.title}</ProjectTitle>
+              <ProjectDescription>{project.description}</ProjectDescription>
+            </DescriptionContainer>
+          </ProjectCardContainer>
+        ))}
+        {projectsData.map((project, index) => (
+          <ProjectCardContainer key={index}>
+            <LaptopImage src={project.imageUrl} alt={`${project.title} Laptop`} />
+            <DescriptionContainer>
+              <ProjectTitle>{project.title}</ProjectTitle>
+              <ProjectDescription>{project.description}</ProjectDescription>
+            </DescriptionContainer>
+          </ProjectCardContainer>
+        ))}
         {projectsData.map((project, index) => (
           <ProjectCardContainer key={index}>
             <LaptopImage src={project.imageUrl} alt={`${project.title} Laptop`} />

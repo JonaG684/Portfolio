@@ -28,11 +28,11 @@ const TechstackContainer = styled.div`
 const TechRow = styled.div`
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   max-width: 400px; /* Ajusta el ancho máximo según tus preferencias */
 
   @media (max-width: 768px) {
     max-width: 300px; /* Ajusta el ancho máximo para pantallas más pequeñas */
+    flex-wrap: wrap;
   }
 `;
 

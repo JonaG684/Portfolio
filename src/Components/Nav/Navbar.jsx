@@ -1,27 +1,43 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
+import NavIcon from "../../assets/Icon.svg";
 
 const NavbarContainer = styled.nav`
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 1rem 2rem;
   background-color: #333;
   color: #fff;
 `;
 
 const NavLinks = styled.ul`
   list-style: none;
+  font-family: Jetsbrains Mono, monospace;
   display: flex;
-  gap: 1rem;
+  color: white;
+  justify-content: center;
+  font-size: 1.2rem;
+  gap: 15em;
+
+  @media (max-width: 768px) {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    background-color: #333;
+    z-index: 1;
+  }
 `;
 
-const NavLinkItem = styled.li``;
+const NavLinkItem = styled.li`
+  margin: 1rem 0;
+  color: white;
+
+  @media (max-width: 768px) {
+    margin: 0;
+  }
+`;
 
 const SmoothScrollLink = styled(Link)`
   color: inherit;
@@ -33,9 +49,20 @@ const SmoothScrollLink = styled(Link)`
   }
 `;
 
+const NavLogo = styled.img`
+  max-width: 5rem;
+  cursor: pointer;
+  margin-right: 10rem;
+
+  @media (max-width: 768px) {
+    margin-right: 0;
+  }
+`;
+
 const Navbar = () => {
   return (
     <NavbarContainer>
+      <NavLogo src={NavIcon} alt="Navbar Icon" />
       <NavLinks>
         <NavLinkItem>
           <SmoothScrollLink to="home" smooth={true} duration={350}>
