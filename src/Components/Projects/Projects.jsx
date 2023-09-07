@@ -8,7 +8,7 @@ const ProjectsContainer = styled.div`
 `;
 
 const ProjectCardContainer = styled.div`
-  display: flex;
+  display: flow;
   align-items: center;
   margin-bottom: 1rem;
 `;
@@ -22,6 +22,9 @@ const Title = styled.h2`
 const LaptopImage = styled.img`
   max-width: 50%;
   height: auto;
+  @media (max-width: 768px){
+    max-width: 90%;
+  }
 `;
 
 const DescriptionContainer = styled.div`
@@ -42,7 +45,7 @@ const ProjectDescription = styled.p`
   
   @media (max-width: 768px) {
     margin-right: 1rem;
-    font-size: 0.8rem;
+    font-size: 0.8rem; 
   }
 `;
 
