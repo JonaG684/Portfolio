@@ -33,6 +33,7 @@ const NavLinks = styled.ul`
 const NavLinkItem = styled.li`
   margin: 1rem 0;
   color: white;
+  
 
   @media (max-width: 768px) {
     margin: 0;
@@ -40,12 +41,14 @@ const NavLinkItem = styled.li`
 `;
 
 const SmoothScrollLink = styled(Link)`
-  color: inherit;
+  color: lightcoral;
   text-decoration: none;
   cursor: pointer;
+  
 
   &:hover {
     text-decoration: underline;
+    color: white;
   }
 `;
 

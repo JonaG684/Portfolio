@@ -23,7 +23,7 @@ const Heading = styled.h1`
   margin-bottom: 0.5rem;
 
   @media (max-width: 768px) {
-    font-size: 2rem;
+    font-size: 1.8rem;
     display: flex;
     align-items: center;
   }
