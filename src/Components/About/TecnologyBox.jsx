@@ -19,7 +19,7 @@ import {
 import { TbBrandCSharp, TbBrandRedux } from "react-icons/tb";
 
 const TechstackContainer = styled.div`
-display:flex;
+  display: flex;
   justify-content: center;
   padding-bottom: 50px;
 `;
@@ -30,7 +30,7 @@ const TechRow = styled.div`
   max-width: 400px;
 
   @media (max-width: 768px) {
-    max-width: 300px; 
+    max-width: 300px;
     flex-wrap: wrap;
   }
 `;
@@ -94,6 +94,3 @@ const Techstack = () => {
 };
 
 export default Techstack;
-
-
-

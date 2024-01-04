@@ -8,9 +8,12 @@ const ProjectsContainer = styled.div`
 `;
 
 const ProjectCardContainer = styled.div`
-  display: flow;
+  display: flex;
   align-items: center;
   margin-bottom: 1rem;
+  @media (max-width: 768px){
+    display:flow;
+  }
 `;
 
 const Title = styled.h2`
