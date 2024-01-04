@@ -19,7 +19,7 @@ const App = () => {
       <Navbar />
       <Home />
       <About />
-    <Projects/>
+      <Projects />
       <Footer />
     </PageContainer>
   );
