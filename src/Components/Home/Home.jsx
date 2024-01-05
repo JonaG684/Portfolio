@@ -119,7 +119,7 @@ const Home = () => {
         Full Stack Developer - front-end and graphic design enthusiast.
       </Subtitle>
       <CVLink
-        href="https://github.com/JonaG684/Portfolio/raw/b1dc587d7ab332321c3f88ef16da6fc9b1fedad4/src/Components/Home/cv.pdf"
+        href="https://github.com/JonaG684/Portfolio/raw/00a49992334d3f25b35fbd87e5b7285947b256d5/src/assets/Jonathan%20Adriel%20Garcia%20Avilez%20CV%20EN.pdf"
         download
       >
         Download CV
