@@ -119,7 +119,7 @@ const Home = () => {
         Full Stack Developer - front-end and graphic design enthusiast.
       </Subtitle>
       <CVLink
-        href="../../../public/cv.pdf"
+        href="https://github.com/JonaG684/Portfolio/blob/acdf279a2e416a4dba646c2a89ceee899d0fa164/public/cv.pdf"
         download
       >
         Download CV
@@ -134,3 +134,4 @@ const Home = () => {
 };
 
 export default Home;
+
