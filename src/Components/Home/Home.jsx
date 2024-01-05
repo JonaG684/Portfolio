@@ -119,7 +119,7 @@ const Home = () => {
         Full Stack Developer - front-end and graphic design enthusiast.
       </Subtitle>
       <CVLink
-        href="./cv.pdf"
+        href="https://github.com/JonaG684/Portfolio/raw/b1dc587d7ab332321c3f88ef16da6fc9b1fedad4/src/Components/Home/cv.pdf"
         download
       >
         Download CV
