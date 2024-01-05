@@ -119,7 +119,7 @@ const Home = () => {
         Full Stack Developer - front-end and graphic design enthusiast.
       </Subtitle>
       <CVLink
-        href="../../src/assets/cv.pdf"
+        href="../../public/cv.pdf"
         download
       >
         Download CV
