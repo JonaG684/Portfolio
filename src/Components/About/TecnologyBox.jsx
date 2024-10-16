@@ -21,6 +21,8 @@ import {
   SiNextdotjs,
   SiNginx,
   SiDocker,
+  SiMongodb,
+  SiAmazonec2,
 } from "react-icons/si";
 import { TbBrandCSharp, TbBrandRedux } from "react-icons/tb";
 
@@ -110,6 +112,12 @@ const Techstack = () => {
         </TechIcon>
         <TechIcon>
           <SiDocker />
+        </TechIcon>
+        <TechIcon>
+          <SiMongodb />
+        </TechIcon>
+        <TechIcon>
+          <SiAmazonec2 />
         </TechIcon>
       </TechRow>
     </TechstackContainer>
