@@ -15,6 +15,12 @@ import {
   SiTypescript,
   SiVite,
   SiAdobeillustrator,
+  SiPython,
+  SiAwsamplify,
+  SiTailwindcss,
+  SiNextdotjs,
+  SiNginx,
+  SiDocker,
 } from "react-icons/si";
 import { TbBrandCSharp, TbBrandRedux } from "react-icons/tb";
 
@@ -26,6 +32,7 @@ const TechstackContainer = styled.div`
 
 const TechRow = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   max-width: 400px;
 
@@ -65,8 +72,6 @@ const Techstack = () => {
         <TechIcon>
           <FaJs />
         </TechIcon>
-      </TechRow>
-      <TechRow>
         <TechIcon>
           <FaNode />
         </TechIcon>
@@ -87,6 +92,24 @@ const Techstack = () => {
         </TechIcon>
         <TechIcon>
           <SiAdobeillustrator />
+        </TechIcon>
+        <TechIcon>
+          <SiPython />
+        </TechIcon>
+        <TechIcon>
+          <SiAwsamplify />
+        </TechIcon>
+        <TechIcon>
+          <SiTailwindcss />
+        </TechIcon>
+        <TechIcon>
+          <SiNextdotjs />
+        </TechIcon>
+        <TechIcon>
+          <SiNginx />
+        </TechIcon>
+        <TechIcon>
+          <SiDocker />
         </TechIcon>
       </TechRow>
     </TechstackContainer>
