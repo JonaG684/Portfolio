@@ -6,6 +6,7 @@ import Floating from "../Link/Floating";
 const HomeContainer = styled.div`
   min-height: 100vh;
   display: flex;
+  background-color:  #242424;
   flex-direction: column;
   justify-content: center;
   align-items: center;
