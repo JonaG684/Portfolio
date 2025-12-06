@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Element, Link } from "react-scroll";
 import Floating from "../Link/Floating";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const HomeContainer = styled.div`
   min-height: 100vh;
@@ -115,6 +116,7 @@ const Home = () => {
   return (
     <HomeContainer id="home">
       <Floating />
+      <SpeedInsights />
       <Heading>HEY, I'M JONATHAN GARCIA</Heading>
       <Subtitle>
         Full Stack Developer - front-end and graphic design enthusiast.
